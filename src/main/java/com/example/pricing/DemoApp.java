@@ -15,17 +15,17 @@ public class DemoApp {
       //batch1 start
         service.startBatch("batch-1");
         service.uploadChunk("batch-1", List.of(
-                new Price("apple", Instant.now(), "120"),
-                new Price("banana", Instant.now(), "100"),
-                new Price("chiku", Instant.now(), "50")
+                new Price("Apple", Instant.now(), "120"),
+                new Price("Banana", Instant.now(), "100"),
+                new Price("Grapes", Instant.now(), "50")
         ));
         
         //batch2 start
         service.startBatch("batch-2");
         service.uploadChunk("batch-2", List.of(
-        		new Price("apple", Instant.now(), "180"),
-        		new Price("banana", Instant.now(), "200"),
-        		new Price("chiku", Instant.now(), "5")
+        		new Price("Apple", Instant.now(), "180"),
+        		new Price("Banana", Instant.now(), "200"),
+        		new Price("Grapes", Instant.now(), "5")
         		));
         
         service.completeBatch("batch-2");
